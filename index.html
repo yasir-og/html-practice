@@ -1,68 +1,116 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Basic Structure</title>
+    </head>
 
-<head>
-    <title>Basic Structure</title>
-</head>
-
-<body>
-<!--headings-->
-        <h1>heading 1</h1>
-        <h2>heading 2</h2>
-        <h3>heading 3</h3>
-        <h4>heading 4</h4>
-        <h5>heading 5</h5>
-        <h5>heading 6</h6>
-<!--PARAGRAPH-->
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, blanditiis!</p>
-<!--SEMANTIC TAGS-->
-        <p>Lorem ipsum <strong>dolor sit amet consectetur adipisicing elit.</strong> Enim, veritatis?</p>
-        <p>Lorem ipsum <em>dolor sit amet consectetur adipisicing elit.</em> Enim, veritatis?</p>
-<!--LINK-->
-        <p>Lorem ipsum,<a href=""> dolor sit amet </a>consectetur adipisicing elit. Quas, rem!</p>
-        <p>Lorem ipsum,<a href="" target="_blank"> dolor sit amet </a>consectetur adipisicing elit. Quas, rem!</p>
-        <p>Lorem ipsum,<a href="https://www.google.com"> dolor sit amet </a>consectetur adipisicing elit. Quas, rem!</p>
-        <p>Lorem ipsum,<a href="https://www.google.com" target="_blank"> dolor sit amet </a>consectetur adipisicing
-            elit. Quas, rem!</p>
-<!--LISTS-->
-        <ul>
-            <li>list no. 1</li>
-            <li>list no.2</li>
-            <li>list no.3</li>
-        </ul>
-        <ol>
-            <li>list no.1</li>
-            <li>list no.2</li>
-            <li>list no.3</li>
-        </ol>
-<!--TABLE-->
-<table>
-    <thead>
-        <tr>
-            <th>NAME</th>
-            <th>TEAM</th>
-            <th>AGE</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>RONALDO</td>
-            <td>PORTUGAL</td>
-            <td>40</td>
-        </tr>
-        <tr>
-            <td>MESSI</td>
-            <td>ARGENTINA</td>
-            <td>38</td>
-        </tr>
-        <tr>
-            <td>NEYMAR</td>
-            <td>BRAZIL</td>
-            <td>32</td>
-        </tr>
-    </tbody>
-</table>
-         
-</body>
-
+    <body>
+        <!--headings-->
+            <h1>heading 1</h1>
+            <h2>heading 2</h2>
+            <h3>heading 3</h3>
+            <h4>heading 4</h4>
+            <h5>heading 5</h5>
+            <h5>heading 6</h6>
+        <!--PARAGRAPH-->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, blanditiis!</p>
+        <!--SEMANTIC TAGS-->
+            <p>Lorem ipsum <strong>dolor sit amet consectetur adipisicing elit.</strong> Enim, veritatis?</p>
+            <p>Lorem ipsum <em>dolor sit amet consectetur adipisicing elit.</em> Enim, veritatis?</p>
+        <!--LINK-->
+            <p>Lorem ipsum,<a href=""> dolor sit amet </a>consectetur adipisicing elit. Quas, rem!</p>
+            <p>Lorem ipsum,<a href="" target="_blank"> dolor sit amet </a>consectetur adipisicing elit. Quas, rem!</p>
+            <p>Lorem ipsum,<a href="https://www.google.com"> dolor sit amet </a>consectetur adipisicing elit. Quas, rem!</p>
+            <p>Lorem ipsum,<a href="https://www.google.com" target="_blank"> dolor sit amet </a>consectetur adipisicing elit. Quas, rem!</p>
+        <!--LISTS-->
+            <ul>
+                <li>list no. 1</li>
+                <li>list no.2</li>
+                <li>list no.3</li>
+            </ul>
+            <ol>
+                <li>list no.1</li>
+                <li>list no.2</li>
+                <li>list no.3</li>
+            </ol>
+        <!--TABLE-->
+        <table>
+            <thead>
+                <tr>
+                    <th>NAME</th>
+                    <th>TEAM</th>
+                    <th>AGE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>RONALDO</td>
+                    <td>PORTUGAL</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>MESSI</td>
+                    <td>ARGENTINA</td>
+                    <td>38</td>
+                </tr>
+                <tr>
+                    <td>NEYMAR</td>
+                    <td>BRAZIL</td>
+                    <td>33</td>
+                </tr>
+            </tbody>
+        </table>
+        <!--FORMS-->
+        <form action="process.php" method="post">
+            <div>
+                <label>First Name</label>
+            </div>
+            <div>
+                <input type="text" name="firstName" placeholder="Enter">
+            </div>
+            <div>
+                <label>Last Name</label>
+            </div>
+            <div>
+                <input type="text" name="lastName" placeholder="Enter">
+            </div>
+            <div>
+                <label>Email</label>
+            </div>
+            <div>
+                <input type="email" name="email" placeholder="Enter">
+            </div>
+            <div>
+                <label>Gender</label>
+            </div>
+            <div>
+                <select name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>    
+            <div>
+                <label>Age</label>
+            </div>
+            <div>
+                <input type="number" name="age" min="1" max="100" placeholder="Enter">
+            </div>
+            <div>
+                <label>Birthday</label>
+            </div>
+            <div>
+                <input type="date" name="birthday" placeholder="Enter">
+            </div>
+            <div>
+                <label>Message</label>
+            </div>
+            <div>
+                <textarea name="message" rows="5" cols="30" placeholder="Enter"></textarea>
+            </div>
+            <div>
+                <input type="submit" namw="submit" value="Submit">
+            </div>
+        </form>
+    </body>
 </html>
